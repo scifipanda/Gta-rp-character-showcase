@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.my-navbar {
+    position: fixed;
+    padding: 10px;
+    word-spacing: 10px;
+    right: 10px;
+    z-index: 1;
+}
+.my-navbar a {
+    color: white;
+}
+.my-navbar a:hover {
+    color: gray
+}
+
+/*Title section */
+#title {
+  padding: 250px 0;
+  padding-bottom: 550px;
+  text-align: center;
+  color: white;
+}
+#title h2 {
+  font-size: 3.5rem;
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+#title p {
+  font-size: 1.25rem;
+  font-family: "catamaran";
+}
+.title-background {
+  background-image: url(gtavprofpics/q7mix8zahvuz.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+/*Character section */
+.character-container {
+    width: 50%;
+    height: 586px;
+    width: 474px;
+    position: relative;
+    margin: 0 auto;
+    background-image: url(gtavprofpics/clipboard.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+.character-picture{
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+    background: white;
+    padding: 5px;
+}
+.paperclip {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.heading {
+    font-family: 'Special Elite', cursive;
+}
+.heading h2{
+    font-size: 1.75rem;
+}
+.heading h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 0;
+
+}
+/* Slideshow container */
+.slideshow-container {
+  position: absolute;
+  background: rgb(161, 161, 161);
+  padding: 20px;
+  box-shadow: 0 0 10px black;
+  border-radius: 500px;
+  top: 550px;
+  width: 100%;
+}
+.slideshow-container h1 {
+  text-align: center;
+  padding: 10px;
+  color: rgb(221, 221, 221);
+}
+/* Hide the images by default */
+.mySlides {
+  position: relative;
+  z-index: 1;
+  display: none;
+}
+/* Next & previous buttons */
+.prev {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  padding: 337px 0 337px 50px;
+  user-select: none;
+  border-radius: 500px 0 0 500px;
+  width: 50%;
+}
+.next {
+  position: absolute;
+  text-align: right;
+  top: 0;
+  height: 100%;
+  right: 0;
+  padding: 337px 50px 337px 0;
+  user-select: none;
+  border-radius: 0 500px 500px 0;
+  width: 50%;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.150);
+  
+}
+/* Caption text */
+
+/* Testimonial section */
+#testimonial-section {
+  background-image: url(gtavprofpics/Next-Gen-GTA-V-New-Screenshots-14.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 450px 0 100px;
+}
+.testimonial {
+  text-align: center;
+  margin: 50px auto;
+  width: 30%;
+  padding: 50px 10px 25px;
+  color: black;
+  background: #FFFDD0;
+  border: 2px solid rgb(104, 32, 32);
+  border-radius: 20px;
+  box-shadow: 0 0 10px black;
+  font-size: 1.5rem;
+}
+.testimonial::before {
+  content: '"';
+  font-size: 4rem;
+  font-family: 'Catamaran', sans-serif;
+}
+.testimonial::after {
+  position: relative;
+  top: 60px;
+  content: '"';
+  left: 10px;
+  font-size: 4rem;
+  font-family: 'Catamaran', sans-serif;
+}
+.testimonial-container {
+  position: relative;
+}
+.name {
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  color: black;
+  position: absolute;
+  text-align: center;
+  background: #FFFDD0;
+  border: 2px solid rgb(104, 32, 32);
+  border-radius: 20px 20px 0 0;
+  width: 30%;
+}
+
+
+@media (max-width: 1000px) {
+  .my-navbar {
+    position: absolute;
+  }
+  .slideshow-container {
+    border-radius: 0;
+  }
+  .mySlides {
+    z-index: inherit;
+    
+  }
+  .prev, .next {
+    border-radius: 0;
+  }
+  .name, .testimonial{
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  #title h2{
+    font-size: 2rem;
+  }
+  .character-picture {
+    width: 100px;
+    height: 100px;
+    top: 75px;
+  }
+  .mySlides {
+    width: 100%;
+  }
+  .paperclip {
+    display: none;
+  }
+}
