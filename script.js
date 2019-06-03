@@ -20,7 +20,9 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  var character = document.getElementsByClassName("character-container");
   let randomAngle= Math.round(Math.random() * 20 - 10);
+  let characterAngle= Math.round(Math.random() * 10 - 5);
   let picture = document.getElementsByClassName("character-picture");
   if (n > slides.length) {slideIndex = 1} 
   if (n < 1) {slideIndex = slides.length}
@@ -31,6 +33,10 @@ function showSlides(n) {
 
   for(var i=0, len=picture.length; i<len; i++)
     {
-        picture[i].style["transform"] = "rotate(" + randomAngle + "deg)";;
+        picture[i].style["transform"] = "rotate(" + characterAngle + "deg)";;
+    }
+    for(var i=0, len=character.length; i<len; i++)
+    {
+        character[i].style["transform"] = "rotate(" + characterAngle + "deg)";;
     }
 }

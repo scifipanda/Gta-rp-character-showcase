@@ -82,17 +82,22 @@ body {
 /* Slideshow container */
 .slideshow-container {
   position: absolute;
-  background: rgb(161, 161, 161);
+  background: url(gtavprofpics/woodtable.jpg);
   padding: 20px;
   box-shadow: 0 0 10px black;
   border-radius: 500px;
-  top: 550px;
+  top: 600px;
   width: 100%;
 }
 .slideshow-container h1 {
   text-align: center;
   padding: 10px;
-  color: rgb(221, 221, 221);
+  color: rgb(190, 62, 53);
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 0 rgb(40, 48, 66);
+  width: 200px;
+  margin: 10px auto;
 }
 /* Hide the images by default */
 .mySlides {
@@ -106,10 +111,12 @@ body {
   top: 0;
   height: 100%;
   left: 0;
-  padding: 337px 0 337px 50px;
+  padding: 300px 0 300px 50px;
   user-select: none;
   border-radius: 500px 0 0 500px;
   width: 50%;
+  color: white !important;
+  font-size: 2rem;
 }
 .next {
   position: absolute;
@@ -117,14 +124,16 @@ body {
   top: 0;
   height: 100%;
   right: 0;
-  padding: 337px 50px 337px 0;
+  padding: 300px 50px 300px 0;
   user-select: none;
   border-radius: 0 500px 500px 0;
   width: 50%;
+  color: white !important;
+  font-size: 2rem;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.150);
+  background-color: rgba(0, 0, 0, 0.3);
   
 }
 /* Caption text */
@@ -145,13 +154,14 @@ body {
   padding: 50px 10px 25px;
   color: black;
   background: #FFFDD0;
-  border: 2px solid rgb(104, 32, 32);
+  border: 2px solid rgb(197, 2, 2);
   border-radius: 20px;
   box-shadow: 0 0 10px black;
   font-size: 1.5rem;
 }
 .testimonial::before {
   content: '"';
+  color: rgb(197, 2, 2);
   font-size: 4rem;
   font-family: 'Catamaran', sans-serif;
 }
@@ -159,6 +169,7 @@ body {
   position: relative;
   top: 60px;
   content: '"';
+  color: rgb(197, 2, 2);
   left: 10px;
   font-size: 4rem;
   font-family: 'Catamaran', sans-serif;
@@ -175,11 +186,35 @@ body {
   position: absolute;
   text-align: center;
   background: #FFFDD0;
-  border: 2px solid rgb(104, 32, 32);
+  border: 2px solid rgb(197, 2, 2);
   border-radius: 20px 20px 0 0;
   width: 30%;
+  font-weight: 500;
+}
+#footer {
+  background: black;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  padding: 10px;
+  margin: 0;
 }
 
+/* social section */
+#social-section {
+  text-align: center;
+  padding: 250px 0;
+  position: relative;
+}
+#social-section a {
+  color: white; 
+  padding: 10px; 
+  margin: 10px ;
+  background: black;
+}
+#social-section a:hover {
+  color: rgb(148, 148, 148);
+}
 
 @media (max-width: 1000px) {
   .my-navbar {
@@ -194,6 +229,9 @@ body {
   }
   .prev, .next {
     border-radius: 0;
+  }
+  .prev:hover, .next:hover {
+    background: transparent;
   }
   .name, .testimonial{
     width: 100%;
@@ -211,6 +249,9 @@ body {
   }
   .mySlides {
     width: 100%;
+  }
+  .next, .prev {
+    color: black !important;
   }
   .paperclip {
     display: none;
