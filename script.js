@@ -33,10 +33,10 @@ function showSlides(n) {
 
   for(var i=0, len=picture.length; i<len; i++)
     {
-        picture[i].style["transform"] = "rotate(" + characterAngle + "deg)";;
+        picture[i].style["transform"] = "rotate(" + randomAngle + "deg)";
     }
     for(var i=0, len=character.length; i<len; i++)
     {
-        character[i].style["transform"] = "rotate(" + characterAngle + "deg)";;
+        character[i].style["transform"] = "rotate(" + characterAngle + "deg)";
     }
 }
